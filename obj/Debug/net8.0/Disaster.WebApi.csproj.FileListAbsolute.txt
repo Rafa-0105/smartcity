@@ -1,0 +1,8 @@
+C:\Users\rafae\source\repos\RestFul_api\RestFul_api\obj\Debug\net8.0\Disaster.WebApi.csproj.AssemblyReference.cache
+C:\Users\rafae\source\repos\RestFul_api\RestFul_api\obj\Debug\net8.0\Disaster.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rafae\source\repos\RestFul_api\RestFul_api\obj\Debug\net8.0\Disaster.WebApi.AssemblyInfoInputs.cache
+C:\Users\rafae\source\repos\RestFul_api\RestFul_api\obj\Debug\net8.0\Disaster.WebApi.AssemblyInfo.cs
+C:\Users\rafae\source\repos\RestFul_api\RestFul_api\obj\Debug\net8.0\Disaster.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\rafae\source\repos\RestFul_api\RestFul_api\obj\Debug\net8.0\Disaster.WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\rafae\source\repos\RestFul_api\RestFul_api\obj\Debug\net8.0\Disaster.WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rafae\source\repos\RestFul_api\RestFul_api\obj\Debug\net8.0\Disaster.WebApi.sourcelink.json
