@@ -3,6 +3,8 @@ using RestFul_api.Models;
 using RestFul_api.Services;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Disaster;
+
 
 namespace RestFul_api.Controllers
 {

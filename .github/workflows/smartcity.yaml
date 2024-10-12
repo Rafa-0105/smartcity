@@ -1,0 +1,44 @@
+name: Pipeline
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:     
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: '8.0.0'
+          
+      - name: Checkout do código
+        uses: actions/checkout@v2      
+        
+      - name: Execução do teste de unidade 
+        run: dotnet test ./test/JornadaMilhas.Unit.Test
+
+      - name: Publicando a API
+        run: dotnet publish ./src/JornadaMilhas.API --configuration Release     
+        
+      - name: Restore NuGet packages
+        run: dotnet restore '**/*.sln'
+        
+      - name: Build Solution
+        run: dotnet build '**/*.sln' --configuration Release
+        
+      - name: Run Tests
+        run: dotnet test '**/*Tests/*.csproj' --configuration Release --no-build --verbosity normal
+
+
+      - name: Publish Projects
+        run: dotnet publish '**/*.csproj' --configuration Release --output $(Build.ArtifactStagingDirectory) --zip-after-publish
+        
+      - name: Publish Build Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: drop
+          path: $(Build.ArtifactStagingDirectory)
